@@ -1,0 +1,134 @@
+{
+    "players": [
+        {
+            "name": "Willy Caballero",
+            "number": 1,
+            "imageName": "willy_caballero"
+        },
+        {
+            "name": "Thibault Cortouis",
+            "number": 13,
+            "imageName": "thibaut_courtois"
+        },
+        {
+            "name": "Eduardo",
+            "number": 37,
+            "imageName": "eduardo"
+        },
+        {
+            "name": "Marcos Alonso",
+            "number": 3,
+            "imageName": "marcos_alonso"
+        },
+        {
+            "name": "Gary Cahill",
+            "number": 24,
+            "imageName": "gary_cahill"
+        },
+        {
+            "name": "César Azpilicueta",
+            "number": 28,
+            "imageName": "cezar_azpilicueta"
+        },
+        {
+            "name": "David Luiz",
+            "number": 30,
+            "imageName": "david_luiz"
+        },
+        {
+            "name": "Antonio Rüdiger",
+            "number": 2,
+            "imageName": "antonio_rudiger"
+        },
+        {
+            "name": "Andreas Christensen",
+            "number": 27,
+            "imageName": "andreas_christensen"
+        },
+        {
+            "name": "Davide Dzappacosta",
+            "number": 21,
+            "imageName": "davide_dzappacosta"
+        },
+        {
+            "name": "Ethan Ampadu",
+            "number": 44,
+            "imageName": "ethan_ampadu"
+        },
+        {
+            "name": "Emerson",
+            "number": 33,
+            "imageName": "emerson"
+        },
+        {
+            "name": "Cesc Fàbregas",
+            "number": 4,
+            "imageName": "cesc_fabregas"
+        },
+        {
+            "name": "N'Golo Kanté",
+            "number": 7,
+            "imageName": "ngolo_kante"
+        },
+        {
+            "name": "Eden Hazard",
+            "number": 10,
+            "imageName": "eden_hazard"
+        },
+        {
+            "name": "Victor Moses",
+            "number": 15,
+            "imageName": "victor_moses"
+        },
+        {
+            "name": "Willian",
+            "number": 22,
+            "imageName": "willian"
+        },
+        {
+            "name": "Tiemoué Bakayoko",
+            "number": 14,
+            "imageName": "tiemoue_bakayoko"
+        },
+        {
+            "name": "Daniel Drinkwater",
+            "number": 6,
+            "imageName": "daniel_drinkwater"
+        },
+        {
+            "name": "Kyle Scott",
+            "number": 34,
+            "imageName": "kyle_scott"
+        },
+        {
+            "name": "Dujon Sterling",
+            "number": 66,
+            "imageName": "dujon_sterling"
+        },
+        {
+            "name": "Callum Hudson-Odoi",
+            "number": 70,
+            "imageName": "callum_hudson_odoi"
+        },
+        {
+            "name": "Ross Barkley",
+            "number": 8,
+            "imageName": "ross_barkley"
+        },
+        {
+            "name": "Pedro",
+            "number": 11,
+            "imageName": "pedro"
+        },
+        {
+            "name": "Álvaro Morata",
+            "number": 9,
+            "imageName": "alvaro_morata"
+        },
+        {
+            "name": "Olivier Giroud",
+            "number": 18,
+            "imageName": "olivier_giroud"
+        }
+    ]
+}
