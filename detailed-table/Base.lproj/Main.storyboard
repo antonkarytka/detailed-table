@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Chelsea Squad 17/18-->
         <scene sceneID="lcc-Qx-gAB">
             <objects>
-                <tableViewController id="jYi-ra-n6z" customClass="SquadTableViewController" customModule="detailed_table" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalTransitionStyle="flipHorizontal" id="jYi-ra-n6z" customClass="SquadTableViewController" customModule="detailed_table" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AMP-Md-cs2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,12 +60,43 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Chelsea Squad 17/18" id="tho-vX-5sJ"/>
                     <connections>
-                        <segue destination="wRY-D8-KUB" kind="show" id="uOO-eS-RV1"/>
+                        <segue destination="aPM-44-jb4" kind="show" identifier="PlayerDetails" id="lVX-9R-kni"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tb4-KB-TUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250.40000000000001" y="129.98500749625188"/>
+            <point key="canvasLocation" x="-239" y="130"/>
+        </scene>
+        <!--Player Details View Controller-->
+        <scene sceneID="NMo-FK-k5N">
+            <objects>
+                <viewController id="aPM-44-jb4" customClass="PlayerDetailsViewController" customModule="detailed_table" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eGL-HJ-ylJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLQ-Gn-9Cd">
+                                <rect key="frame" x="102" y="72" width="170" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EUR-AN-va9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dO5-zd-NL4">
+                        <barButtonItem key="backBarButtonItem" title="Item" width="20" id="mek-bc-gPv"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="name" destination="vLQ-Gn-9Cd" id="fpW-uq-7Jz"/>
+                        <outlet property="navigationBar" destination="dO5-zd-NL4" id="SxZ-9s-Uq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0J-hj-vIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SZN-zY-1LV">
@@ -83,21 +115,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0V-z7-fK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1132" y="130"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4b0-p8-a66">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRY-D8-KUB" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rjb-W4-fau">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iho-33-RIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="667.20000000000005" y="129.53523238380811"/>
         </scene>
     </scenes>
 </document>

@@ -83,4 +83,14 @@ class SquadTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "PlayerDetails", sender: players[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! PlayerDetailsViewController
+        let decoratedSender = sender as? [String: AnyObject]
+        destination.playerName = (decoratedSender!["name"] as? String)!
+    }
 }

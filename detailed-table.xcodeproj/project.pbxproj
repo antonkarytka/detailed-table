@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67072027202E28B8008FA823 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072026202E28B8008FA823 /* PlayerDetailsViewController.swift */; };
 		6720D13F20224EC6009F6EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6720D13E20224EC6009F6EBF /* AppDelegate.swift */; };
 		6720D14120224EC6009F6EBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6720D14020224EC6009F6EBF /* ViewController.swift */; };
 		6720D14420224EC6009F6EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6720D14220224EC6009F6EBF /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67072026202E28B8008FA823 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 		6720D13B20224EC6009F6EBF /* detailed-table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "detailed-table.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6720D13E20224EC6009F6EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6720D14020224EC6009F6EBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				6720D14A20224EC6009F6EBF /* Info.plist */,
 				6753992C202A3ADD00129875 /* PlayerTableViewCell.swift */,
 				67AF0901202B8EBC00A02727 /* PlayersData.json */,
+				67072026202E28B8008FA823 /* PlayerDetailsViewController.swift */,
 			);
 			path = "detailed-table";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				6720D14120224EC6009F6EBF /* ViewController.swift in Sources */,
 				6753992B202A3ABB00129875 /* SquadTableViewController.swift in Sources */,
 				6720D13F20224EC6009F6EBF /* AppDelegate.swift in Sources */,
+				67072027202E28B8008FA823 /* PlayerDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
