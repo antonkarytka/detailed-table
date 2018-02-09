@@ -10,9 +10,19 @@ import UIKit
 
 class PlayerDetailsViewController: UIViewController {
     @IBOutlet weak var navigationBar: UINavigationItem!
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var number: UILabel!
+    @IBOutlet weak var age: UILabel!
+    @IBOutlet weak var country: UILabel!
+    @IBOutlet weak var city: UILabel!
     
+    var playerImage: String = ""
     var playerName: String = ""
+    var playerNumber: String = ""
+    var playerAge: String = ""
+    var playerCountry: String = ""
+    var playerCity: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +32,12 @@ class PlayerDetailsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         navigationBar.title = playerName
+        image.image = UIImage(named: playerImage)
         name.text = playerName
+        number.text = playerNumber
+        age.text = playerAge
+        country.text = playerCountry
+        city.text = playerCity
     }
     
     override func didReceiveMemoryWarning() {

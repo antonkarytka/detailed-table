@@ -3,132 +3,210 @@
         {
             "name": "Willy Caballero",
             "number": 1,
-            "imageName": "willy_caballero"
+            "imageName": "willy_caballero",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Thibault Cortouis",
             "number": 13,
-            "imageName": "thibaut_courtois"
+            "imageName": "thibaut_courtois",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Eduardo",
             "number": 37,
-            "imageName": "eduardo"
+            "imageName": "eduardo",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Marcos Alonso",
             "number": 3,
-            "imageName": "marcos_alonso"
+            "imageName": "marcos_alonso",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Gary Cahill",
             "number": 24,
-            "imageName": "gary_cahill"
+            "imageName": "gary_cahill",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "César Azpilicueta",
             "number": 28,
-            "imageName": "cezar_azpilicueta"
+            "imageName": "cezar_azpilicueta",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "David Luiz",
             "number": 30,
-            "imageName": "david_luiz"
+            "imageName": "david_luiz",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Antonio Rüdiger",
             "number": 2,
-            "imageName": "antonio_rudiger"
+            "imageName": "antonio_rudiger",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Andreas Christensen",
             "number": 27,
-            "imageName": "andreas_christensen"
+            "imageName": "andreas_christensen",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Davide Dzappacosta",
             "number": 21,
-            "imageName": "davide_dzappacosta"
+            "imageName": "davide_dzappacosta",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Ethan Ampadu",
             "number": 44,
-            "imageName": "ethan_ampadu"
+            "imageName": "ethan_ampadu",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Emerson",
             "number": 33,
-            "imageName": "emerson"
+            "imageName": "emerson",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Cesc Fàbregas",
             "number": 4,
-            "imageName": "cesc_fabregas"
+            "imageName": "cesc_fabregas",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "N'Golo Kanté",
             "number": 7,
-            "imageName": "ngolo_kante"
+            "imageName": "ngolo_kante",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Eden Hazard",
             "number": 10,
-            "imageName": "eden_hazard"
+            "imageName": "eden_hazard",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Victor Moses",
             "number": 15,
-            "imageName": "victor_moses"
+            "imageName": "victor_moses",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Willian",
             "number": 22,
-            "imageName": "willian"
+            "imageName": "willian",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Tiemoué Bakayoko",
             "number": 14,
-            "imageName": "tiemoue_bakayoko"
+            "imageName": "tiemoue_bakayoko",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Daniel Drinkwater",
             "number": 6,
-            "imageName": "daniel_drinkwater"
+            "imageName": "daniel_drinkwater",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Kyle Scott",
             "number": 34,
-            "imageName": "kyle_scott"
+            "imageName": "kyle_scott",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Dujon Sterling",
             "number": 66,
-            "imageName": "dujon_sterling"
+            "imageName": "dujon_sterling",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Callum Hudson-Odoi",
             "number": 70,
-            "imageName": "callum_hudson_odoi"
+            "imageName": "callum_hudson_odoi",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Ross Barkley",
             "number": 8,
-            "imageName": "ross_barkley"
+            "imageName": "ross_barkley",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Pedro",
             "number": 11,
-            "imageName": "pedro"
+            "imageName": "pedro",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Álvaro Morata",
             "number": 9,
-            "imageName": "alvaro_morata"
+            "imageName": "alvaro_morata",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         },
         {
             "name": "Olivier Giroud",
             "number": 18,
-            "imageName": "olivier_giroud"
+            "imageName": "olivier_giroud",
+            "age": 25,
+            "country": "Belarus",
+            "city": "Minsk"
         }
     ]
 }

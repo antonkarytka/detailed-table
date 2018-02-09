@@ -91,6 +91,12 @@ class SquadTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! PlayerDetailsViewController
         let decoratedSender = sender as? [String: AnyObject]
+        
+        destination.playerImage = (decoratedSender!["imageName"] as? String)!
         destination.playerName = (decoratedSender!["name"] as? String)!
+        destination.playerNumber = decoratedSender!["number"].flatMap {String(describing: $0)}!
+        destination.playerAge = decoratedSender!["age"].flatMap {String(describing: $0)}!
+        destination.playerCountry = (decoratedSender!["country"] as? String)!
+        destination.playerCity = (decoratedSender!["city"] as? String)!
     }
 }
