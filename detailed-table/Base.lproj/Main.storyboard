@@ -27,18 +27,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-tF-HRy">
-                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                            <rect key="frame" x="0.0" y="5" width="60" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI5-Eq-NSW">
-                                            <rect key="frame" x="68" y="10" width="255" height="36"/>
+                                            <rect key="frame" x="68" y="16" width="255" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-yh-KU6">
-                                            <rect key="frame" x="325" y="10" width="34" height="36"/>
+                                            <rect key="frame" x="325" y="16" width="34" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <nil key="textColor"/>
@@ -142,8 +142,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRB-9T-uCG">
+                                <rect key="frame" x="16" y="611" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.28691914215063324" green="0.55221629866899591" blue="0.90444867227979275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Detailed Info">
+                                    <color key="titleColor" red="0.98320652058074143" green="1" blue="0.98151762774659745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="openPlayerLink:" destination="aPM-44-jb4" eventType="touchUpInside" id="KEl-JS-8em"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EUR-AN-va9" firstAttribute="trailing" secondItem="RRB-9T-uCG" secondAttribute="trailing" constant="16" id="M8l-7p-3vj"/>
+                            <constraint firstItem="RRB-9T-uCG" firstAttribute="leading" secondItem="EUR-AN-va9" secondAttribute="leading" constant="16" id="cma-2s-kd7"/>
+                            <constraint firstItem="EUR-AN-va9" firstAttribute="trailing" secondItem="RRB-9T-uCG" secondAttribute="trailing" constant="16" id="fnJ-0h-tcb"/>
+                            <constraint firstItem="EUR-AN-va9" firstAttribute="bottom" secondItem="RRB-9T-uCG" secondAttribute="bottom" constant="20" id="vgc-og-hMd"/>
+                            <constraint firstItem="RRB-9T-uCG" firstAttribute="leading" secondItem="EUR-AN-va9" secondAttribute="leading" constant="16" id="wJn-dX-gsg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EUR-AN-va9"/>
                     </view>
                     <navigationItem key="navigationItem" id="dO5-zd-NL4">
@@ -157,11 +175,60 @@
                         <outlet property="name" destination="vLQ-Gn-9Cd" id="lHI-bV-VBV"/>
                         <outlet property="navigationBar" destination="dO5-zd-NL4" id="SxZ-9s-Uq3"/>
                         <outlet property="number" destination="hw7-Sw-vM2" id="164-cU-CAi"/>
+                        <segue destination="1SI-kX-ayu" kind="show" identifier="OpenPlayerLink" id="bIH-lY-iUX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0J-hj-vIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="557.60000000000002" y="129.98500749625188"/>
+        </scene>
+        <!--Web Browser View Controller-->
+        <scene sceneID="0oI-ng-uVn">
+            <objects>
+                <viewController id="1SI-kX-ayu" customClass="WebBrowserViewController" customModule="detailed_table" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8DZ-11-0VY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3XX-sn-kzP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <viewLayoutGuide key="safeArea" id="f66-HV-TJY"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7i-se-936">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="done" id="RUf-rI-bKm">
+                                        <connections>
+                                            <action selector="goToPreviousViewController:" destination="1SI-kX-ayu" id="0gs-gV-7gd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="2nm-Yy-G2E">
+                                        <connections>
+                                            <action selector="refreshPage:" destination="1SI-kX-ayu" id="MWq-30-6OM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Dv5-rf-zLV"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="3XX-sn-kzP" id="hDC-pD-VBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifa-9X-GyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320.8" y="129.98500749625188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SZN-zY-1LV">

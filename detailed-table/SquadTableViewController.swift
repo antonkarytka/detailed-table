@@ -98,5 +98,10 @@ class SquadTableViewController: UITableViewController {
         destination.playerAge = decoratedSender!["age"].flatMap {String(describing: $0)}!
         destination.playerCountry = (decoratedSender!["country"] as? String)!
         destination.playerCity = (decoratedSender!["city"] as? String)!
+        destination.playerLink = (decoratedSender!["link"] as? String)!
+        
+        let backItemWithoutTitle = UIBarButtonItem()
+        backItemWithoutTitle.title = ""
+        navigationItem.backBarButtonItem = backItemWithoutTitle
     }
 }

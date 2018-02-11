@@ -17,16 +17,20 @@ class PlayerDetailsViewController: UIViewController {
     @IBOutlet weak var country: UILabel!
     @IBOutlet weak var city: UILabel!
     
+    @IBAction func openPlayerLink(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "OpenPlayerLink", sender: playerLink)
+    }
+    
     var playerImage: String = ""
     var playerName: String = ""
     var playerNumber: String = ""
     var playerAge: String = ""
     var playerCountry: String = ""
     var playerCity: String = ""
+    var playerLink: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -43,6 +47,11 @@ class PlayerDetailsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! WebBrowserViewController
+        destination.link = (sender as? String)!
     }
     
 
