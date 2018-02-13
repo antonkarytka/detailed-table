@@ -99,6 +99,10 @@ class SquadTableViewController: UITableViewController {
         destination.playerCountry = (decoratedSender!["country"] as? String)!
         destination.playerCity = (decoratedSender!["city"] as? String)!
         destination.playerLink = (decoratedSender!["link"] as? String)!
+        destination.playerDateOfBirth = (decoratedSender!["dateOfBirth"] as? String)!
+        destination.playerHeight = (decoratedSender!["height"] as? String)!
+        destination.playerPlayingPosition = (decoratedSender!["playingPosition"] as? String)!
+        destination.playerPreviousTeam = (decoratedSender!["previousTeam"] as? String)!
         
         let backItemWithoutTitle = UIBarButtonItem()
         backItemWithoutTitle.title = ""

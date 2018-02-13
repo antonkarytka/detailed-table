@@ -16,6 +16,10 @@ class PlayerDetailsViewController: UIViewController {
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var country: UILabel!
     @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var dateOfBirth: UILabel!
+    @IBOutlet weak var height: UILabel!
+    @IBOutlet weak var playingPosition: UILabel!
+    @IBOutlet weak var previousTeam: UILabel!
     
     @IBAction func openPlayerLink(_ sender: UIButton) {
         self.performSegue(withIdentifier: "OpenPlayerLink", sender: playerLink)
@@ -28,6 +32,10 @@ class PlayerDetailsViewController: UIViewController {
     var playerCountry: String = ""
     var playerCity: String = ""
     var playerLink: String = ""
+    var playerDateOfBirth: String = ""
+    var playerHeight: String = ""
+    var playerPlayingPosition: String = ""
+    var playerPreviousTeam: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +50,10 @@ class PlayerDetailsViewController: UIViewController {
         age.text = playerAge
         country.text = playerCountry
         city.text = playerCity
+        dateOfBirth.text = playerDateOfBirth
+        height.text = playerHeight
+        playingPosition.text = playerPlayingPosition
+        previousTeam.text = playerPreviousTeam
     }
     
     override func didReceiveMemoryWarning() {
