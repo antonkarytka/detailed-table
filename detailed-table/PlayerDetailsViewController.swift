@@ -22,59 +22,36 @@ class PlayerDetailsViewController: UIViewController {
     @IBOutlet weak var previousTeam: UILabel!
     
     @IBAction func openPlayerLink(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "OpenPlayerLink", sender: playerLink)
+        self.performSegue(withIdentifier: "OpenPlayerLink", sender: (player["link"] as? String)!)
     }
     
-    var playerImage: String = ""
-    var playerName: String = ""
-    var playerNumber: String = ""
-    var playerAge: String = ""
-    var playerCountry: String = ""
-    var playerCity: String = ""
-    var playerLink: String = ""
-    var playerDateOfBirth: String = ""
-    var playerHeight: String = ""
-    var playerPlayingPosition: String = ""
-    var playerPreviousTeam: String = ""
+    var player: [String: AnyObject]!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        navigationBar.title = playerName
-        image.image = UIImage(named: playerImage)
-        name.text = playerName
-        number.text = playerNumber
-        age.text = playerAge
-        country.text = playerCountry
-        city.text = playerCity
-        dateOfBirth.text = playerDateOfBirth
-        height.text = playerHeight
-        playingPosition.text = playerPlayingPosition
-        previousTeam.text = playerPreviousTeam
+        navigationBar.title = (player["name"] as? String)!
+        image.image = UIImage(named: (player["imageName"] as? String)!)
+        name.text = (player["name"] as? String)!
+        number.text = player["number"].flatMap {String(describing: $0)}!
+        age.text = player["age"].flatMap {String(describing: $0)}!
+        country.text = (player["country"] as? String)!
+        city.text = (player["city"] as? String)!
+        dateOfBirth.text = (player["dateOfBirth"] as? String)!
+        height.text = (player["height"] as? String)!
+        playingPosition.text = (player["playingPosition"] as? String)!
+        previousTeam.text = (player["previousTeam"] as? String)!
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! WebBrowserViewController
         destination.link = (sender as? String)!
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

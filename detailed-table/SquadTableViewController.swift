@@ -9,19 +9,6 @@
 import UIKit
 
 class SquadTableViewController: UITableViewController {
-
-    struct Player: Codable {
-        var name: String
-        var number: Int
-        var imageName: String
-        
-        public init(name: String, number: Int, imageName: String) {
-            self.name = name
-            self.number = number
-            self.imageName = imageName
-        }
-    }
-    
     var players = [] as Array<AnyObject>
     
     func loadDataFromFile(fileName: String, fileExtension: String) {
@@ -48,27 +35,17 @@ class SquadTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.loadDataFromFile(fileName: "PlayersData", fileExtension: "json")
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return players.count
     }
 
@@ -90,19 +67,7 @@ class SquadTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! PlayerDetailsViewController
-        let decoratedSender = sender as? [String: AnyObject]
-        
-        destination.playerImage = (decoratedSender!["imageName"] as? String)!
-        destination.playerName = (decoratedSender!["name"] as? String)!
-        destination.playerNumber = decoratedSender!["number"].flatMap {String(describing: $0)}!
-        destination.playerAge = decoratedSender!["age"].flatMap {String(describing: $0)}!
-        destination.playerCountry = (decoratedSender!["country"] as? String)!
-        destination.playerCity = (decoratedSender!["city"] as? String)!
-        destination.playerLink = (decoratedSender!["link"] as? String)!
-        destination.playerDateOfBirth = (decoratedSender!["dateOfBirth"] as? String)!
-        destination.playerHeight = (decoratedSender!["height"] as? String)!
-        destination.playerPlayingPosition = (decoratedSender!["playingPosition"] as? String)!
-        destination.playerPreviousTeam = (decoratedSender!["previousTeam"] as? String)!
+        destination.player = sender as? [String: AnyObject]
         
         let backItemWithoutTitle = UIBarButtonItem()
         backItemWithoutTitle.title = ""
